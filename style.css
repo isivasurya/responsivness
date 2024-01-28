@@ -1,0 +1,456 @@
+@media (min-width: 1025px) {
+    * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+    }
+    body {
+        height: 100vh;
+        width: 100vw;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+    .navbar {
+        height: 12vh;
+        width: 100%;
+        border: 2px solid red;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        gap: 10px;
+        background: linear-gradient(300deg, #ff4c68, #fbb53b);
+        background-size: 180% 180%;
+        animation: navbg 10s ease infinite;
+    }
+    @keyframes navbg {
+        0% {
+            background-position: 0% 50%;
+        }
+        50% {
+            background-position: 100% 50%;
+        }
+        100% {
+            background-position: 0% 50%;
+        }
+    }
+    .navbar .lnav {
+        height: 100%;
+        width: 45%;
+        /* border: 2px solid green; */
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .navbar img {
+        height: 80%;
+        margin-left: 10px;
+    }
+    .navbar .sbbtn {
+        display: flex;
+        gap: 20px;
+    }
+    .navbar #srcbar {
+        height: 30px;
+        width: 200px;
+        border-radius: 20px;
+        text-align: center;
+        border-width: 0 0 2px 0;
+    }
+    .navbar #sbtn {
+        height: 30px;
+        width: 60px;
+        border-radius: 50px;
+        font-size: 0.8rem;
+        font-style: italic;
+        cursor: pointer;
+        border: solid blue;
+        border-width: 0 0 2px 0;
+        font-weight: bolder;
+    }
+    .navbar #sbtn:hover {
+        transform: scale(1.2);
+        transition: ease-in all 1.2s;
+    }
+    .navbar .rnav {
+        height: 100%;
+        width: 55%;
+        /* border: 2px solid rgb(255, 0, 0); */
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    .rnav a {
+        text-decoration: none;
+        border: 2px solid violet;
+        padding: 10px;
+        border-radius: 10px;
+        font-size: 1.2em;
+        font-weight: bolder;
+    }
+    .rnav a:hover {
+        transform: translateY(-3px);
+        transition: ease all 1.2s;
+        background-color: violet;
+    }
+    .main1 {
+        height: 80vh;
+        width: 100%;
+        border: 2px solid orange;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 15px;
+    }
+    .main1 .btn1 {
+        height: 20px;
+        width: 20px;
+        color: rgb(0, 0, 0);
+        background-color: white;
+        border: solid;
+        border-width: 0 0 5px 5px;
+        rotate: 45deg;
+        cursor: pointer;
+    }
+    .main1 .btn2 {
+        height: 20px;
+        width: 20px;
+        color: rgb(0, 0, 0);
+        background-color: white;
+        border: solid;
+        border-width: 5px 5px 0 0;
+        rotate: 45deg;
+        cursor: pointer;
+    }
+    .main1 button:hover {
+        background-color: rgb(224, 217, 217);
+        opacity: 0.5;
+        cursor: pointer;
+        border-color: red;
+    }
+    .main1 #ad {
+        height: 80%;
+        width: 80%;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        border: 2px solid rgb(0, 55, 255);
+        overflow: hidden;
+    }
+    .main1 #ad img {
+        height: 100%;
+        width: 100%;
+    }
+}
+
+
+/* Tablet sizing */
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+    }
+    body {
+        height: 100vh;
+        width: 100vw;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+    .navbar {
+        height: 40vh;
+        width: 100%;
+        /* border: 2px solid red; */
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        gap: 20px;
+        background: linear-gradient(-300deg, #ff4c68, #f5c74a);
+        background-size: 150% 150%;
+        animation: navbg 5s ease infinite;
+    }
+    @keyframes navbg {
+        0% {
+            background-position: 0% 50%;
+        }
+        50% {
+            background-position: 100% 50%;
+        }
+        100% {
+            background-position: 0% 50%;
+        }
+    }
+    .navbar .lnav {
+        height: 70%;
+        width: 100%;
+        /* border: 2px solid green; */
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+    }
+    .navbar .lnav img {
+        height: 50%;
+        margin-left: 10px;
+    }
+    .navbar .sbbtn {
+        display: flex;
+        gap: 20px;
+    }
+    .navbar #srcbar {
+        height: 30px;
+        width: 200px;
+        border-radius: 20px;
+        text-align: center;
+        border-width: 0 0 2px 0;
+    }
+    .navbar #sbtn {
+        height: 30px;
+        width: 60px;
+        border-radius: 50px;
+        font-size: 0.8em;
+        font-style: italic;
+        font-weight: bolder;
+        cursor: pointer;
+        /* border: solid blue; */
+        border-width: 0 0 2px 0;
+    }
+    .navbar #sbtn:hover {
+        transform: scale(1.2);
+        transition: ease-in all 1.2s;
+    }
+    .navbar .rnav {
+        margin-bottom: 10px;
+        height: 50%;
+        width: 100%;
+        /* border: 2px solid rgb(255, 0, 0); */
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    .rnav a {
+        text-decoration: none;
+        border: 2px solid rgb(131, 0, 225);
+        padding: 10px;
+        border-radius: 10px;
+        font-size: 1.2em;
+        font-weight: bolder;
+    }
+    .rnav a:hover {
+        transform: translateY(-3px);
+        transition: ease all 1.2s;
+        background-color: violet;
+    }
+    .main1 {
+        height: 80vh;
+        width: 100%;
+        border: 2px solid orange;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 15px;
+    }
+    .main1 .btn1 {
+        height: 20px;
+        width: 20px;
+        color: rgb(0, 0, 0);
+        background-color: white;
+        border: solid;
+        border-width: 0 0 5px 5px;
+        rotate: 45deg;
+        cursor: pointer;
+    }
+    .main1 .btn2 {
+        height: 20px;
+        width: 20px;
+        color: rgb(0, 0, 0);
+        background-color: white;
+        border: solid;
+        border-width: 5px 5px 0 0;
+        rotate: 45deg;
+        cursor: pointer;
+    }
+    .main1 button:hover {
+        background-color: rgb(224, 217, 217);
+        opacity: 0.5;
+        cursor: pointer;
+        border-color: red;
+    }
+    .main1 #ad {
+        height: 80%;
+        width: 80%;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        border: 2px solid rgb(0, 55, 255);
+        overflow: hidden;
+    }
+    .main1 #ad img {
+        height: 100%;
+        width: 100%;
+    }
+}
+
+
+/* Mobile size */
+
+@media (max-width: 768px) {
+    * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+    }
+    body {
+        height: 100vh;
+        width: 100vw;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+    .navbar {
+        height: 40vh;
+        width: 100%;
+        /* border: 2px solid red; */
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        gap: 20px;
+        background: linear-gradient(-300deg, #ff4c68, #f8f13c);
+        background-size: 150% 150%;
+        animation: navbg 5s ease infinite;
+    }
+    @keyframes navbg {
+        0% {
+            background-position: 0% 50%;
+        }
+        50% {
+            background-position: 100% 50%;
+        }
+        100% {
+            background-position: 0% 50%;
+        }
+    }
+    .navbar .lnav {
+        height: 70%;
+        width: 45%;
+        /* border: 2px solid green; */
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+    }
+    .navbar .lnav img {
+        height: 50%;
+        margin-left: 10px;
+    }
+    .navbar .sbbtn {
+        display: flex;
+        gap: 20px;
+    }
+    .navbar #srcbar {
+        height: 30px;
+        width: 200px;
+        border-radius: 20px;
+        text-align: center;
+        border-width: 0 0 2px 0;
+    }
+    .navbar #sbtn {
+        height: 30px;
+        width: 60px;
+        border-radius: 50px;
+        font-size: 0.8em;
+        font-style: italic;
+        font-weight: bolder;
+        cursor: pointer;
+        /* border: solid blue; */
+        border-width: 0 0 2px 0;
+    }
+    .navbar #sbtn:hover {
+        transform: scale(1.2);
+        transition: ease-in all 1.2s;
+    }
+    .navbar .rnav {
+        margin-bottom: 10px;
+        height: 50%;
+        width: 100%;
+        /* border: 2px solid rgb(255, 0, 0); */
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    .rnav a {
+        text-decoration: none;
+        border: 2px solid rgb(131, 0, 225);
+        padding: 10px;
+        border-radius: 10px;
+        font-size: 1.2em;
+        font-weight: bolder;
+    }
+    .rnav a:hover {
+        transform: translateY(-3px);
+        transition: ease all 1.2s;
+        background-color: violet;
+    }
+    .main1 {
+        height: 80vh;
+        width: 100%;
+        border: 2px solid orange;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 15px;
+    }
+    .main1 .btn1 {
+        height: 20px;
+        width: 20px;
+        color: rgb(0, 0, 0);
+        background-color: white;
+        border: solid;
+        border-width: 0 0 5px 5px;
+        rotate: 45deg;
+        cursor: pointer;
+    }
+    .main1 .btn2 {
+        height: 20px;
+        width: 20px;
+        color: rgb(0, 0, 0);
+        background-color: white;
+        border: solid;
+        border-width: 5px 5px 0 0;
+        rotate: 45deg;
+        cursor: pointer;
+    }
+    .main1 button:hover {
+        background-color: rgb(224, 217, 217);
+        opacity: 0.5;
+        cursor: pointer;
+        border-color: red;
+    }
+    .main1 #ad {
+        height: 80%;
+        width: 80%;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        border: 2px solid rgb(0, 55, 255);
+        overflow: hidden;
+    }
+    .main1 #ad img {
+        height: 100%;
+        width: 100%;
+    }
+}

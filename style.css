@@ -411,7 +411,7 @@
         flex-direction: row;
         justify-content: center;
         align-items: center;
-        gap: 8px;
+        gap: 5px;
     }
     .main1 .btn1 {
         height: 20px;
